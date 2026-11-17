@@ -40,3 +40,4 @@ yarn-error.log*
 
 #database
 /data
+packages/database/data/pantheon.db
