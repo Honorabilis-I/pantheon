@@ -1,0 +1,36 @@
+{
+  "name": "@repo/database",
+  "module": "index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./src/types": "./src/types"
+  },
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/bun": "latest",
+    "@types/node": "^26.6.6",
+    "prisma": "^7.10.1"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.10.1",
+    "@prisma/adapter-libsql": "7",
+    "@prisma/client": "7",
+    "dotenv": "^18.0.10"
+  },
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ES2023",
+    "strict": true,
+    "esModuleInterop": true,
+    "ignoreDeprecations": "6.0"
+  }
+}
