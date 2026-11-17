@@ -1,6 +1,5 @@
 {
   "name": "@repo/database",
-  "module": "index.ts",
   "exports": {
     ".": "./src/index.ts",
     "./src/types": "./src/types"
