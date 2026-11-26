@@ -1,0 +1,21 @@
+{
+  "name": "@repo/treaty",
+  "module": "index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@elysia/eden": "^1.4.10",
+    "@repo/api": "workspace:*"
+  }
+}
